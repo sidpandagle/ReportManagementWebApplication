@@ -1,19 +1,13 @@
-.header {
-    height: 10vh;
-    width: 100%;
-    background-color: #2984ff;
-}
-
 .main {
     display: flex;
     min-height: 100vh;
 }
 
 .sidebar {
-    width: 15%;
+    width: 25%;
     background-color: #1c1d21;
 }
 
 .router-outlet {
-    width: 85%;
+    width: 75%;
 }

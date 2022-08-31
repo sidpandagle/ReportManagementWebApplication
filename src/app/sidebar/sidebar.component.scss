@@ -2,25 +2,27 @@
     color: white
 }
 
-.logo {
+.header {
     height: 10vh;
+    font-weight: 600;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav {
+.navigation {
     margin: 10%;
     cursor: pointer;
 }
 
-.nav-item {
+.navigation-item {
     margin: 10% 0;
     opacity: 0.7;
     transition: 250ms;
 }
 
-.nav-item:hover,
+.navigation-item:hover,
 .selected {
     transition: 250ms;
     opacity: 1;
