@@ -13,11 +13,16 @@
   font-weight: 500;
 }
 
-.logout{
+.btn{
   font-weight: 500;
   border: 2px solid;
   padding: 7px 20px;
   border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: black;
+  color: white;
 }
 
 .wrapper{
