@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+
+.header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >div{
+      margin: 0 5vw;
+    }
+  }
+  
+  .heading{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .btn{
+    font-weight: 500;
+    border: 2px solid $black;
+    padding: 7px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn:hover{
+    background-color: $black;
+    color: white;
+  }
+  
+  .wrapper{
+    height: 90vh;
+    margin: 2vw 5vw;
+    // background-color: #fafafa;
+  }
+  
+  .input-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px
+  }
+  
+  .btn-container{
+    margin: 10px 0;
+  }
+  
+  .large-btn{
+    width: 100%;
+  }

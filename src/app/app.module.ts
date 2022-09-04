@@ -8,6 +8,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CategoryComponent } from './category/category.component';
 import { ReportComponent } from './report/report.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { CategoryAddComponent } from './category-add/category-add.component';
+import { ReportAddComponent } from './report-add/report-add.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +20,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     SidebarComponent,
     CategoryComponent,
+    CategoryAddComponent,
     ReportComponent,
+    ReportAddComponent,
     DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

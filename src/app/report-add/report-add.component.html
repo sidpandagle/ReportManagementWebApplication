@@ -1,22 +1,23 @@
 <div class="header">
 <div class="heading">Add Report</div>
-<div class="btn" routerLink='/report'>Go Back</div>
+<div class="btn" (click)='goBack()'>Go Back</div>
 </div>
 <div class="wrapper">
   <div class="row">
-    <div class="input-block col-lg-12 col-md-12 col-sm-12">
+  <div class="input-block">
     <label>Title</label>
     <input type="text">
     </div>
-  <div class="input-block col-lg-4 col-md-4 col-sm-12">
+    </div><div class="row">
+  <div class="input-block">
   <label>Single Price</label>
   <input type="number">
   </div>
-  <div class="input-block col-lg-4 col-md-4 col-sm-12">
+  <div class="input-block">
   <label>Multiple Price</label>
   <input type="number">
   </div>
-  <div class="input-block col-lg-4 col-md-4 col-sm-12">
+  <div class="input-block">
   <label>Pages</label>
   <input type="number">
   </div>

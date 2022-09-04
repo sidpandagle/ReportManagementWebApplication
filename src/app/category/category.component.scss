@@ -1,5 +1,7 @@
+@import '../../styles.scss';
+
 .header{
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,13 +17,13 @@
 
 .btn{
   font-weight: 500;
-  border: 2px solid;
+  border: 2px solid $black;
   padding: 7px 20px;
   border-radius: 5px;
 }
 
 .btn:hover{
-  background-color: black;
+  background-color: $black;
   color: white;
 }
 
