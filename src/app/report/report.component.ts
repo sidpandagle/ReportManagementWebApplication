@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import { Category } from '../_models/category';
+import { Report } from '../_models/report';
 
 @Component({
   selector: 'app-report',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportComponent implements OnInit {
 
-  constructor() { }
+  reports:Report[];
+  
+
+  constructor(private api: ApiService) { 
+    this.reports = [];
+  }
 
   ngOnInit(): void {
   }
 
+  getReports(){
+    this.api.getReports().subscribe(res=>{
+      this.reports = res;
+    })
+  }
 }
