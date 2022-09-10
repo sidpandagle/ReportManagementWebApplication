@@ -29,6 +29,4 @@ export class ApiService {
   createReport(data: CreateReport):Observable<Report>{
     return this.http.post<Report>(this.API_URL + '/report', data);
   }
-
-  
 }
